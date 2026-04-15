@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: 'Helvetica Neue', Arial, sans-serif;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    --color-background: #0F1115;
+    --color-foreground: #E2E8F0;
+    --color-card: #1E293B;
+    --color-card-foreground: #E2E8F0;
+    --color-popover: #1E293B;
+    --color-popover-foreground: #E2E8F0;
+    --color-primary: #3B82F6;
+    --color-primary-foreground: #FFFFFF;
+    --color-secondary: #0F172A;
+    --color-secondary-foreground: #CBD5E1;
+    --color-muted: #0F172A;
+    --color-muted-foreground: #94A3B8;
+    --color-accent: #334155;
+    --color-accent-foreground: #E2E8F0;
+    --color-destructive: #EF4444;
+    --color-destructive-foreground: #FFFFFF;
+    --color-border: #334155;
+    --color-input: #334155;
+    --color-ring: #3B82F6;
+    
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+}
+
+:root {
+    --background: #0F1115;
+    --foreground: #E2E8F0;
+    --card: #1E293B;
+    --card-foreground: #E2E8F0;
+    --primary: #3B82F6;
+    --primary-foreground: #FFFFFF;
+    --border: #334155;
+    --input: #334155;
+    --ring: #3B82F6;
+}
+
+.dark {
+    --background: #0F1115;
+    --foreground: #E2E8F0;
+    --card: #1E293B;
+    --card-foreground: #E2E8F0;
+    --primary: #3B82F6;
+    --primary-foreground: #FFFFFF;
+    --border: #334155;
+    --input: #334155;
+    --ring: #3B82F6;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}

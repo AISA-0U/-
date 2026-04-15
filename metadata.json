@@ -1,0 +1,6 @@
+{
+  "name": "Modular AI Agent Workspace",
+  "description": "An intelligent agent system with modular tools for web search, text summarization, data extraction, and multi-format report generation (Word, Excel, PDF).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Agent", "Tool Calling", "Report Generation"]
+}
